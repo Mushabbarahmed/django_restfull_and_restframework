@@ -30,28 +30,28 @@ Make sure you have Python and pip installed. This project is built with:
 
 1. **Clone the repository:**
 
-   \`\`\`bash
+   ```
    git clone https://github.com/yourusername/item-management-api.git
    cd item-management-api
-   \`\`\`
+   ```
 
 2. **Install the required packages:**
 
-   \`\`\`bash
+   ```
    pip install django djangorestframework
-   \`\`\`
+            ```
 
 3. **Run migrations:**
 
-   \`\`\`bash
+   ```
    python manage.py migrate
-   \`\`\`
+   
 
 4. **Run the server:**
 
-   \`\`\`bash
+   ```
    python manage.py runserver
-   \`\`\`
+   
 
 ### API Endpoints
 
@@ -59,13 +59,13 @@ Make sure you have Python and pip installed. This project is built with:
    - **URL:** \`/api/items/\`
    - **Method:** \`POST\`
    - **Body:**
-     \`\`\`json
+     ```json
      {
        "first_name": "Item Name",
        "description": "Description of the item",
        "price": 19.99
      }
-     \`\`\`
+     ```
 
 2. **Retrieve All Items**
    - **URL:** \`/api/items/\`
@@ -79,13 +79,13 @@ Make sure you have Python and pip installed. This project is built with:
    - **URL:** \`/api/items/<id>/\`
    - **Method:** \`PUT\`
    - **Body:**
-     \`\`\`json
+     ```json
      {
        "first_name": "Updated Item Name",
        "description": "Updated description",
        "price": 24.99
      }
-     \`\`\`
+     ```
 
 5. **Delete Item**
    - **URL:** \`/api/items/<id>/\`
