@@ -1,13 +1,14 @@
-# User Details API with Django REST Frame
-This project is a simple Django application  for understanding of restapi to know how to write a API'S to know performing CRUD operation on your own in django that provides a RESTful API for capturing and managing user details. Built with Django and Django REST Framework, the API supports CRUD operations for user details without any HTML interface.
+# Item Management API with Django REST Framework
+
+This project is a simple Django application designed to help you understand how to write REST APIs and perform CRUD operations using Django and Django REST Framework. The API allows for the creation, retrieval, updating, and deletion of items, each with a first name, description, and price.
 
 ## Features
 
-- **Create** user details (POST)
-- **Retrieve** all user details (GET)
-- **Retrieve** specific user details (GET by ID)
-- **Update** user details (PUT)
-- **Delete** user details (DELETE)
+- **Create** item (POST)
+- **Retrieve** all items (GET)
+- **Retrieve** specific item by ID (GET)
+- **Update** item details (PUT)
+- **Delete** item (DELETE)
 
 ## Technologies Used
 
@@ -29,24 +30,67 @@ Make sure you have Python and pip installed. This project is built with:
 
 1. **Clone the repository:**
 
-   ```
-   git clone https://github.com/yourusername/user-details-api.git
-   cd user-details-api
-   
-3  .Install the required packages:
-   ```
+   \`\`\`bash
+   git clone https://github.com/yourusername/item-management-api.git
+   cd item-management-api
+   \`\`\`
+
+2. **Install the required packages:**
+
+   \`\`\`bash
    pip install django djangorestframework
-   ```
+   \`\`\`
 
-4.Run migrations:
-```
-python manage.py migrate
-```
+3. **Run migrations:**
 
-5 Run the server:
+   \`\`\`bash
+   python manage.py migrate
+   \`\`\`
 
-```
-python manage.py runserver
-````
+4. **Run the server:**
 
+   \`\`\`bash
+   python manage.py runserver
+   \`\`\`
 
+### API Endpoints
+
+1. **Create Item**
+   - **URL:** \`/api/items/\`
+   - **Method:** \`POST\`
+   - **Body:**
+     \`\`\`json
+     {
+       "first_name": "Item Name",
+       "description": "Description of the item",
+       "price": 19.99
+     }
+     \`\`\`
+
+2. **Retrieve All Items**
+   - **URL:** \`/api/items/\`
+   - **Method:** \`GET\`
+
+3. **Retrieve Specific Item**
+   - **URL:** \`/api/items/<id>/\`
+   - **Method:** \`GET\`
+
+4. **Update Item**
+   - **URL:** \`/api/items/<id>/\`
+   - **Method:** \`PUT\`
+   - **Body:**
+     \`\`\`json
+     {
+       "first_name": "Updated Item Name",
+       "description": "Updated description",
+       "price": 24.99
+     }
+     \`\`\`
+
+5. **Delete Item**
+   - **URL:** \`/api/items/<id>/\`
+   - **Method:** \`DELETE\`
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request.
