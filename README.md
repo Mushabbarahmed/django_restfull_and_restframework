@@ -1,5 +1,4 @@
-# User Details API
-
+# User Details API with Django REST Frame
 This project is a simple Django application  for understanding of restapi to know how to write a API'S to know performing CRUD operation on your own in django that provides a RESTful API for capturing and managing user details. Built with Django and Django REST Framework, the API supports CRUD operations for user details without any HTML interface.
 
 ## Features
